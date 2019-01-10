@@ -1,6 +1,5 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
-  Dancer.call(this);
-
+  Dancer.apply(this, arguments);
 }
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
@@ -8,6 +7,8 @@ BlinkyDancer.prototype.constructor = BlinkyDancer;
 
 BlinkyDancer.prototype.step = function() {
   // Call the parent step function
+  //console.log('In BlinkyDancer step method');
+  //console.log(this);
   Dancer.prototype.step.call(this);
   // do the rest
   this.$node.toggle();
