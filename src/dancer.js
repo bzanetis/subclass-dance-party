@@ -26,6 +26,22 @@ Dancer.prototype.setPosition = function(top, left) {
     this.$node.css(styleSettings);
 };
 
+Dancer.prototype.lineUp = function(dancersArray) {
+  // How do we make the dancers line up in relation to each other, when this is called for each dancer in window.dancers[];
+  let top = 42;
+  let left = 10;
+  let topDiff = 40;
+  let leftDiff = 0;
+  // Iterate through the array of dancers
+  for (let i = 0; i < dancersArray.length; i++) {
+  // Britt -- I removed the check for dancer type that was here
+  // For each dancer set the position
+      dancersArray[i].setPosition(top, left);
+      top += topDiff;
+      left += leftDiff
+  }
+};
+
 /*// Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps) {
 

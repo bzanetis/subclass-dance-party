@@ -1,5 +1,7 @@
 var SpinDancer = function(top, left, timeBetweenSteps) {
   Dancer.apply(this, arguments);
+  // Add an animate.cs class to our node
+  this.$node.addClass("spinDancer");
 }
 
 SpinDancer.prototype = Object.create(Dancer.prototype);
