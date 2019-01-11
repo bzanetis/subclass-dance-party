@@ -26,12 +26,20 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .zoomDancer{
-  border:10px solid green;
+/*  border:10px solid green;
   border-radius:10px;
-  position:absolute;
+  position:absolute;*/
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  background-image: url(./src/polarbear001.jpg);
 }
 .spinDancer{
-  border:10px solid blue;
+  /*border:10px solid blue;
   border-radius:10px;
-  position:absolute;
+  position:absolute;*/
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  background-image: url(./src/BlockonDenverJammer.jpg);
 }

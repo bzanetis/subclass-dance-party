@@ -29,8 +29,8 @@ Dancer.prototype.setPosition = function(top, left) {
 Dancer.prototype.lineUp = function(dancersArray) {
   // How do we make the dancers line up in relation to each other, when this is called for each dancer in window.dancers[];
   let top = 42;
-  let left = 10;
-  let topDiff = 40;
+  let left = 20;
+  let topDiff = 105;
   let leftDiff = 0;
   // Iterate through the array of dancers
   for (let i = 0; i < dancersArray.length; i++) {
