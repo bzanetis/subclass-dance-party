@@ -30,8 +30,8 @@ Dancer.prototype.lineUp = function(dancersArray) {
   // How do we make the dancers line up in relation to each other, when this is called for each dancer in window.dancers[];
   let top = 42;
   let left = 20;
-  let topDiff = 105;
-  let leftDiff = 0;
+  let topDiff = 0;
+  let leftDiff = 105;
   // Iterate through the array of dancers
   for (let i = 0; i < dancersArray.length; i++) {
   // Britt -- I removed the check for dancer type that was here
@@ -40,6 +40,13 @@ Dancer.prototype.lineUp = function(dancersArray) {
       top += topDiff;
       left += leftDiff
   }
+};
+
+Dancer.prototype.unLineUp = function() {
+  // Put myself at a random position
+    let top = ($("body").height() - 100) * Math.random();
+    let left =   ($("body").width() - 100) * Math.random();
+    this.setPosition(top, left);
 };
 
 /*// Creates and returns a new dancer object that can step

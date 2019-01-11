@@ -22,8 +22,8 @@ $(document).ready(function() {
 
     // make a dancer with a random position
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      ($("body").height() - 100) * Math.random(),
+      ($("body").width() - 100) * Math.random(),
       Math.random() * 1000
     );
     // Add the dancer to the HTML in the body
@@ -38,5 +38,18 @@ $(document).ready(function() {
       window.dancers[i].lineUp(window.dancers);
     }
   });
+
+  $('.unLineUpButton').on('click', function(event) {
+    // Iterate through the array of dancers
+    for (let i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].unLineUp();
+    }
+  });
+
+  // $().on('click', function() {
+  //   console.log(this)
+  //   $(this).fadeToggle();
+
+  // });
 });
 

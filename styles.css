@@ -5,11 +5,13 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url(./src/dance_floor.jpg);
+  background-size: 100%;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .lineUpButton{
+.title, .addDancerButton, .lineUpButton, .unLineUpButton{
   padding:5px 12px;
   float:right;
 }
@@ -26,8 +28,8 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .zoomDancer{
-/*  border:10px solid green;
-  border-radius:10px;
+  border: 0px;
+  /*border-radius:10px;
   position:absolute;*/
   width: 100px;
   height: 100px;
@@ -35,8 +37,8 @@ body, a:link, a:visited, a:active{
   background-image: url(./src/polarbear001.jpg);
 }
 .spinDancer{
-  /*border:10px solid blue;
-  border-radius:10px;
+  border: 5px;
+  /*border-radius:10px;
   position:absolute;*/
   width: 100px;
   height: 100px;

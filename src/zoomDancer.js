@@ -1,6 +1,7 @@
 var ZoomDancer = function(top, left, timeBetweenSteps) {
   Dancer.apply(this, arguments);
   this.$node.addClass("zoomDancer");
+  this.$node.stop();
 }
 
 ZoomDancer.prototype = Object.create(Dancer.prototype);
@@ -12,6 +13,7 @@ ZoomDancer.prototype.step = function() {
   //console.log(this);
   Dancer.prototype.step.call(this);
   // do the rest
-  this.$node.toggle();
+  //this.$node.toggle();
+
 };
 

@@ -13,6 +13,6 @@ SpinDancer.prototype.step = function() {
   //console.log(this);
   Dancer.prototype.step.call(this);
   // do the rest
-  this.$node.toggle();
+  //this.$node.toggle();
 };
 
